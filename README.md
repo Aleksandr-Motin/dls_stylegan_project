@@ -2,6 +2,8 @@
 
 Implementation of the approach from [*StyleGAN-NADA: CLIP-Guided Domain Adaptation of Image Generators*](https://arxiv.org/abs/2108.00946).
 
+→ [**report.md**](report.md) — brief summary of work and experimental results (v1 vs v2).
+
 ---
 
 ## Inference: view generations (both versions, any epoch)
