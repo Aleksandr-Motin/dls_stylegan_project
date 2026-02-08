@@ -27,6 +27,17 @@ Frozen generator *G_frozen* gives a reference image; trainable generator *G_trai
 
 ---
 
+## Storage: Google Drive or local (training notebooks)
+
+In **v1** and **v2** training notebooks you can choose where to store models, repos, checkpoints, and output:
+
+- **Google Drive** — set `USE_GOOGLE_DRIVE = True` in Step 1. Drive is mounted; data persists across Colab sessions.
+- **Local** — set `USE_GOOGLE_DRIVE = False`. Uses `/content/StyleGAN_NADA` with the same folder structure; data is lost when the session ends.
+
+Same variable `USE_GOOGLE_DRIVE` in the first cells of each training notebook; no other changes needed.
+
+---
+
 ## StyleGAN2_NADA v1
 
 [`StyleGAN2_NADA v1.ipynb`](StyleGAN2_NADA%20v1.ipynb) — Training notebook (Colab).
