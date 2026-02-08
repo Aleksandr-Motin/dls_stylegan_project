@@ -46,7 +46,23 @@ In v1 we train the **synthesis network as a whole** (mapping frozen). No adaptiv
 
 **Example (photo → anime):**
 
-![v1 results: Original vs Trained faces with CLIP scores](assets/v1_results.png)
+<img src="assets/v1_results.png" width="600" alt="v1 results: Original vs Trained faces with CLIP scores" />
+
+*[v1_results.png](assets/v1_results.png)*
+
+---
+
+## StyleGAN2_NADA v2
+
+[`StyleGAN2_NADA v2.ipynb`](StyleGAN2_NADA%20v2.ipynb) — Training notebook (Colab) with **adaptive layer-freezing** (paper Sec 4.2).
+
+In v2, each iteration first selects *k* synthesis layers via latent optimization (global CLIP loss), then trains only those layers with the directional loss. This reduces instability and memory use on strong domain shifts.
+
+**Example (photo → cartoon/anime):** Original vs trained with CLIP metrics (source, target, face).
+
+<img src="assets/v2_results.png" width="600" alt="v2 results: Original vs Trained faces with CLIP scores" />
+
+*[v2_results.png](assets/v2_results.png)*
 
 ---
 
